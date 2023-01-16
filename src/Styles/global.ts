@@ -12,6 +12,8 @@ export const GlobalStyle = createGlobalStyle`
 
        --black: #000000
         
+	   --input-color: #D9D9D9;
+
 
         --font:'Inter', sans-serif;
 }
