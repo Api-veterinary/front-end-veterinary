@@ -18,6 +18,28 @@ export const GlobalStyle = createGlobalStyle`
         --font:'Inter', sans-serif;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #31944d #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #31944d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
 
 html{
     html, body, div, span, applet, object, iframe,
@@ -47,6 +69,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
