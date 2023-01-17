@@ -1,5 +1,6 @@
 import { FormSignUp } from "./style";
-import {HiOutlineArrowNarrowRight} from "react-icons/hi"
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 export const SignUpForm = () => {
   return (
@@ -47,12 +48,10 @@ export const SignUpForm = () => {
         </div>
 
         <div className="divComplement">
-
-        <label htmlFor="">
-          Complemento
-          <input type="text" />
-        </label>
-
+          <label htmlFor="">
+            Complemento
+            <input type="text" />
+          </label>
         </div>
         <div className="divAdressCEP">
           <label htmlFor="">
@@ -67,26 +66,24 @@ export const SignUpForm = () => {
         </div>
 
         <div className="divState">
+          <label htmlFor="">
+            Cidade
+            <input className="inputAdressState" type="text" />
+          </label>
 
-        <label htmlFor="">
-          Cidade
-          <input className="inputAdressState" type="text" />
-        </label>
-
-        <label htmlFor="">
-          Estado
-          <input className="inputAdressState" type="text" />
-        </label>
+          <label htmlFor="">
+            Estado
+            <input className="inputAdressState" type="text" />
+          </label>
         </div>
       </div>
 
-    <div className="divBtn">
+      <div className="divBtn">
         <button>Cadastrar</button>
-        <button>Login <HiOutlineArrowNarrowRight size={30}/> </button>
-
-    </div>
-
-
+        <p>
+          Já possui cadastro? <Link to={"/"}>Logar</Link>
+        </p>
+      </div>
     </FormSignUp>
   );
 };
