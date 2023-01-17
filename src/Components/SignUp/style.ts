@@ -6,17 +6,17 @@ export const FormSignUp = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90vw;
   margin-top: 10px;
   border-radius: 12px;
   margin-bottom: 30px;
 
-
   .DivAllInput {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     margin: 20px;
+    width: 100%;
   }
 
   input {
@@ -25,127 +25,98 @@ export const FormSignUp = styled.form`
     border: none;
     border-radius: 15px;
     height: 30px;
-    width: 85vw;
-    margin-top:5px;
+    width: 100%;
+    margin-top: 5px;
   }
-  
-  label{
+
+  label {
     font-family: var(--font);
-    text-align: left;
+    width: 90%;
     color: var(--white);
   }
 
   .divPassword {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    width: 100%;
+    label {
+      width: 45%;
+      input {
+        width: 90%;
+      }
+    }
   }
 
   .inputPassword {
-    width: 40vw;
+    width: 100%;
     margin-top: 5px;
   }
 
-  .divAddress{
+  .divAddress {
     margin-top: 25px;
+    width: 90%;
   }
 
-  .divComplement{
+  .divComplement {
     margin-top: 20px;
   }
 
-  .divStreetAndNumber{
+  .divStreetAndNumber {
     display: flex;
     margin-top: 20px;
     gap: 10px;
-    margin-top:20px
+    margin-top: 20px;
   }
 
-
-  .inputStreet{
-    width: 60vw;
-  }
-
-  .inputNumber{
-    width: 20vw;
-  }
-
-  .divAdressCEP{
+  .divAdressCEP {
     display: flex;
     gap: 10px;
-    margin-top:20px
+    margin-top: 20px;
   }
 
-  .inputAdressCEP{
-    width: 40vw;
-  }
-
-  .divState{
+  .divState {
     display: flex;
     gap: 10px;
-    margin-top:20px
-
+    margin-top: 20px;
   }
 
-  .inputAdressState{
-    width: 40vw;
+  .inputAdressState {
+    width: 100%;
   }
 
-  .divBtn{
+  .divBtn {
     margin: 30px;
     display: flex;
+    flex-direction: column;
     gap: 20px;
-  }
-
-  button{
-    font-family: var(--font);
-    color: var(--black);
-    border: none;
-    height: 40px;
-    width: 39vw;
-    border-radius: 15px;
-    display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
+    button {
+      font-family: var(--font);
+      color: var(--black);
+      border: none;
+      width: 45%;
+      height: 40px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    p {
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+    }
   }
 
-  button:hover{
-    background-color: #D9D9D9;
+  button:hover {
+    background-color: #d9d9d9;
   }
-
 
   @media (min-width: 768px) {
-    width: 500px;
-
-    input{
-        width: 30vw;
-    }
-    .inputPassword {
-    width: 14.5vw;
-  }
-
-  .inputStreet{
-    width: 21vw;
-  }
-
-  .inputNumber{
-    width: 8vw;
-  }
-
-  .inputAdressCEP{
-    width: 14.5vw;
-  }
-
-  .inputAdressState{
-    width: 14.5vw;
-  }
-
-  button{
-    width: 14.5vw;
-  }
-
+    width: 600px;
   }
 `;
